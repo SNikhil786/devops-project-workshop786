@@ -1,5 +1,5 @@
 ## Prepare Terraform Environment on Windows
-As part of this, we should setup 
+As part of this, we will setup 
 1. Terraform
 2. VS Code
 3. AWSCLI
