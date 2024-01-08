@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build the code') {
             steps {
-                sh 'mvn clean deplo'
+                sh 'mvn clean deploy'
             }
         }
     }
