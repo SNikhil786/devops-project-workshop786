@@ -4,11 +4,14 @@ pipeline {
             label 'Maven-Agent'
         }
     }
+    environment {
+        PATH = '/opt/apache-maven-3.9.6/bin:$PATH'
+    }
 
     stages {
-        stage('clone this particular repository') {
+        stage('Build the code') {
             steps {
-                git branch: 'main', url: 'https://github.com/SNikhil786/devops-project-workshop.git'
+                sh 'mvn clean deploy'
             }
         }
     }
